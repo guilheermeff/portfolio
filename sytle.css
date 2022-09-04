@@ -6,4 +6,276 @@
 
 :root {
   font-size: 62.5%; /* 10px */
+
+  --cc-background-color: hsl(245, 42%, 24%);
+  --cc-colorButtons: hsl(245, 66%, 47%);
+  --cc-colorDetails: 	hsl(227, 81%, 60%);
+  --cc-textColor:	hsl(51, 30%, 95%);
+
+  --ff-generalFont: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-generalFont);
+  font-size: 1.6rem;
+
+  background-color: var(--cc-background-color);
+  text-align: center;
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+/* ########## end general settings ########## */
+
+/* ########## start nav-bar styles ########## */
+
+nav,
+nav .wrapper {
+  width: 100%;
+  height: 7.2rem;
+  background-color: var(--cc-background-color);
+}
+
+nav .wrapper {
+  padding: 3.5rem 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--cc-textColor);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.0rem;
+}
+
+.menu,
+.close-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+}
+
+.menu {
+  transform: translateY(100%);
+}
+
+.open-menu,
+.close-menu {
+  background-color: transparent;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.buttonContact {
+  background: var(--cc-textColor);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: var(--cc-background-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+/* ########## MENU EXPENDED ########## */
+
+body.menu-expended {
+  overflow: hidden;
+}
+
+body.menu-expended > :not(nav) {
+  visibility: hidden;
+}
+
+body.menu-expended nav button,
+body.menu-expended .logo {
+  position: relative;
+  z-index: 100;
+}
+
+body.menu-expended .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expended .close-menu,
+body.menu-expended .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-expended .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--cc-background-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 300ms;
+  transform: translateX(0);
+}
+
+body.menu-expended ul li a {
+  color: var(--cc-textColor);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+body.menu-expended .links,
+body.menu-expended .social-links {
+  display: flex;
+}
+
+body.menu-expended .links {
+  flex-direction: column;
+  align-items: center;
+  gap: 5.0rem;
+}
+
+body.menu-expended .social-links {
+  flex-direction: row;
+  gap: 2.0rem;
+}
+
+/* ########## end nav-bar styles ########## */
+
+/* ########## start main styles ########## */
+
+#home {
+  margin-top: 4.0rem;
+  margin-bottom: 2.0rem;
+}
+
+#home .col-a {
+  margin-bottom: 3.0rem;
+}
+
+section header h4 {
+  font-size: 1.4rem;
+  margin-bottom: 3.0rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--cc-textColor);
+}
+
+section header h1 {
+  font-size: 2.8rem;
+  color: var(--cc-textColor);
+
+  line-height: 130%;
+
+  margin-bottom: 2.4rem;
+}
+
+section .content p {
+  color: var(--cc-colorDetails);
+
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+}
+
+#home .buttonPortfolio {
+  background-color: var(--cc-colorButtons);
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cc-textColor);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+}
+
+#home .col-b img {
+  margin-inline: auto;
+
+  width: 90%;
+  max-width: 26.4rem;
+}
+
+#home .stats {
+  width: 100%;
+  height: 40rem;
+  padding-block: 4rem;
+  margin-inline: auto;
+  background-color: var(--cc-colorDetails);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--cc-textColor);
+}
+
+.stats .stat h3 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--cc-textColor);
+  line-height: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.stats .stat p {
+  margin: 0;
+  color: var(--cc-background-color);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+
+#about {
+  text-align: left;
+  background-color: var(--cc-textColor);
+
+  padding-top: 10.0rem;
+}
+
+#about header h4 {
+  font-size: 1.4rem;
+  color: var(--cc-background-color);
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+#about header h2 {
+  font-weight: 700;
+  font-size: 3.0rem;
+  line-height: 3.9rem;
+  color: var(--fc-headline);
+
+  color: var(--cc-colorButtons);
+
+  padding-bottom: 2.4rem;
+  padding-top: 6.0rem;
 }
