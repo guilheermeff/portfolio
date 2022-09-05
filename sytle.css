@@ -347,3 +347,22 @@ section .content p {
   position: absolute;
   right: 0;
 }
+
+footer {
+  padding-block: 2.0rem;
+  text-align: left;
+  color: var(--cc-textColor);
+}
+
+footer p {
+  color: var(--cc-textColor);
+  line-height: 1;
+  margin-block: 1.0rem;
+  font-size: 1rem;
+}
+
+footer .social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
