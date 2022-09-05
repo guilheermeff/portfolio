@@ -334,6 +334,18 @@ section .content p {
   border-radius: 0.6rem;
 }
 
+#services .card h3 {
+  color: var(--cc-colorButtons);
+  margin-block: 1.6rem;
+}
+
+.card a img {
+  width: 30.0rem;
+  border-radius: 0.5rem;
+  margin-top: 1.0rem;
+  object-fit: cover;
+}
+
 #contact {
   color: var(--cc-colorDetails);
   text-align: left;
