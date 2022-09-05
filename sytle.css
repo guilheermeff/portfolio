@@ -263,11 +263,10 @@ section .content p {
   line-height: 150%;
 }
 
-#about {
+#about,
+#contact {
   text-align: left;
   background-color: var(--cc-textColor);
-
-  padding-top: 10.0rem;
 }
 
 #about header h4 {
@@ -314,4 +313,37 @@ section .content p {
 
 #skills .card h3 {
   color: var(--cc-background-color);
+}
+
+#contact {
+  color: var(--cc-colorDetails);
+  text-align: left;
+}
+
+#contact header h2 {
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  color: var(--cc-colorButtons);
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#contact img {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  right: 0;
 }
