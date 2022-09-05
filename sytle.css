@@ -315,6 +315,25 @@ section .content p {
   color: var(--cc-background-color);
 }
 
+#services header h2 {
+  color: var(--cc-colorDetails);
+  margin-bottom: 6.0rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: var(--cc-textColor);
+  border: 1px solid var(--cc-colorButtons);
+  border-radius: 0.6rem;
+}
+
 #contact {
   color: var(--cc-colorDetails);
   text-align: left;
