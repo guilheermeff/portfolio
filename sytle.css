@@ -31,6 +31,12 @@ section {
   padding-block: 10.0rem;
 }
 
+section header h2 {
+  font-weight: 700;
+  font-size: 3.0rem;
+  line-height: 3.9rem;
+}
+
 .wrapper {
   width: min(50rem, 100%);
   margin-inline: auto;
@@ -272,11 +278,6 @@ section .content p {
   text-transform: uppercase;
 }
 #about header h2 {
-  font-weight: 700;
-  font-size: 3.0rem;
-  line-height: 3.9rem;
-  color: var(--fc-headline);
-
   color: var(--cc-colorButtons);
 
   padding-bottom: 2.4rem;
@@ -290,4 +291,27 @@ section .content p {
 
 #skills {
   background-color: var(--cc-colorButtons);
+}
+
+#skills header h2 {
+  color: var(--cc-textColor);
+  margin-bottom: 3.0rem;
+}
+
+#skills .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#skills .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: var(--cc-textColor);
+  border: 1px solid var(--cc-background-color);
+  border-radius: 0.6rem;
+}
+
+#skills .card h3 {
+  color: var(--cc-background-color);
 }
