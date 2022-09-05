@@ -27,6 +27,10 @@ body {
   text-align: center;
 }
 
+section {
+  padding-block: 10.0rem;
+}
+
 .wrapper {
   width: min(50rem, 100%);
   margin-inline: auto;
@@ -169,7 +173,6 @@ body.menu-expended .social-links {
 /* ########## start main styles ########## */
 
 #home {
-  margin-top: 4.0rem;
   margin-bottom: 2.0rem;
 }
 
@@ -278,4 +281,13 @@ section .content p {
 
   padding-bottom: 2.4rem;
   padding-top: 6.0rem;
+}
+
+#about img {
+  width: 100%;
+  opacity: 0.9;
+}
+
+#skills {
+  background-color: var(--cc-colorButtons);
 }
