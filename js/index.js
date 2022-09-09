@@ -1,5 +1,7 @@
 const buttonOpenMenu = document.querySelector('.open-menu')
 const buttonCloseMenu = document.querySelector('.close-menu')
+const links = document.querySelector('.menu')
+console.log(links)
 
 function openMenu() {
   document.body.classList.add('menu-expended')
@@ -16,3 +18,7 @@ buttonOpenMenu.addEventListener('click', () => {
 buttonCloseMenu.addEventListener('click', () => {
   closeMenu()
 })
+
+links.onclick = () => {
+  closeMenu()
+}

@@ -15,6 +15,10 @@
   --ff-generalFont: 'Roboto', sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
