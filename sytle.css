@@ -55,7 +55,6 @@ nav,
 nav .wrapper {
   width: 100%;
   height: 7.2rem;
-  background-color: var(--cc-background-color);
 }
 
 nav .wrapper {
@@ -109,7 +108,7 @@ ul {
   margin-bottom: 8rem;
 }
 
-/* ########## MENU EXPENDED ########## */
+/* ########## START MENU EXPENDED ########## */
 
 body.menu-expended {
   overflow: hidden;
@@ -138,7 +137,7 @@ body.menu-expended .menu {
 
 body.menu-expended .menu {
   position: absolute;
-  top: 0;
+  top: 42.2rem;
   left: 0;
 
   width: 100%;
@@ -177,7 +176,28 @@ body.menu-expended .social-links {
   flex-direction: row;
   gap: 2.0rem;
 }
+/* ########## END MENU EXPENDED ########## */
+/* ########## START FIXED MENU ########## */
 
+body.scroll #navigation {
+  position: fixed;
+  top: 0;
+
+  z-index: 100;
+
+  background-color: var(--cc-textColor);
+  transition: 300ms;
+}
+
+body.scroll .logo {
+  color: var(--cc-background-color);
+}
+
+body.scroll .open-menu path {
+  stroke: var(--cc-background-color);
+}
+
+/* ########## END FIXED MENU ########## */
 /* ########## end nav-bar styles ########## */
 
 /* ########## start main styles ########## */
