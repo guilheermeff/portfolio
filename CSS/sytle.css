@@ -29,6 +29,8 @@ body {
 
   background-color: var(--cc-background-color);
   text-align: center;
+
+  scroll-behavior: smooth;
 }
 
 section {
