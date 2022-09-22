@@ -1,4 +1,4 @@
-export function scrollMenu() {
+export function scrollMobileMenu() {
   const page = document.querySelector('body')
 
   const scroll = window.addEventListener('scroll', () => {
